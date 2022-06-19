@@ -36,7 +36,7 @@
       // Fungsi yang digunakan untuk menambahkan tulisan
       // Jangan ubah cara deklarasi fungsinya, cukup isi saja
       function fnClickHandler(toDoItem) {
-        if (toDoItem?.type === "click" || toDoItem?.key === "Enter") {
+        if (toDoItem.type === "click" || toDoItem.key === "Enter") {
           const list = document.createElement("li");
           const listValue = document.createTextNode(inputValue);
           list.appendChild(listValue);
@@ -49,9 +49,7 @@
       }
 
       function fnChangeValue(event) {
-        if (event?.target?.value?.length > 0) {
-          inputValue = event?.target?.value;
-        }
+        inputValue = event.target.value;
       }
 
       // TODO: register event onclick / addEventListener untuk button
