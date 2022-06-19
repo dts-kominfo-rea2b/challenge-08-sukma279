@@ -1,0 +1,23 @@
+body{
+    background-color: darkgrey;
+    display: flex;
+    justify-content: center;
+}
+#app{
+    background-color: #fff;
+    padding: 30px;
+    min-width: 300px;
+    min-height: 400px;
+    border-radius: 10px;
+    margin: 50px;
+    text-align: center;
+}
+#todo-title{
+    background-color: greenyellow;
+}
+#todo-subtitle{
+    margin-bottom: 0;
+}
+#todo-output{
+    text-align: left;
+}
