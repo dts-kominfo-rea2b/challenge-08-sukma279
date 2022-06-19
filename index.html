@@ -32,6 +32,7 @@
       let input = document.getElementById("todo-input");
       let output = document.getElementById("todo-output");
 
+      let inputValue = "";
       // TODO: Buatlah sebuah fungsi dengan nama fnClickHandler
       // Fungsi yang digunakan untuk menambahkan tulisan
       // Jangan ubah cara deklarasi fungsinya, cukup isi saja
@@ -40,8 +41,7 @@
           const list = document.createElement("li");
           const listValue = document.createTextNode(inputValue);
           list.appendChild(listValue);
-          const newList = output.children;
-          output.append(list, ...newList);
+          output.appendChild(list);
 
           inputValue = "";
           input.value = "";
